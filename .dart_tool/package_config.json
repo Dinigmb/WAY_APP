@@ -38,6 +38,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "crypto",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.2",
       "packageUri": "lib/",
@@ -50,14 +56,74 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "ffi",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_hooks",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_hooks-0.16.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_riverpod",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_riverpod-0.13.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/packages/flutter_test",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "freezed_annotation",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/freezed_annotation-0.14.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_fonts",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "hooks_riverpod",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/hooks_riverpod-0.13.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "json_annotation",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -80,6 +146,72 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "path_provider",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider_macos",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_to_regexp",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/path_to_regexp-0.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pedantic",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "process",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "riverpod",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/riverpod-0.13.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -94,6 +226,12 @@
     {
       "name": "stack_trace",
       "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "state_notifier",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/state_notifier-0.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -134,13 +272,31 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "way_app",
+      "name": "win32",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "yeet",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/yeet-0.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flow_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-03-17T12:23:42.503056Z",
+  "generated": "2021-03-20T12:41:29.794619Z",
   "generator": "pub",
   "generatorVersion": "2.12.1"
 }
