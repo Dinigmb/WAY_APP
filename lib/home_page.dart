@@ -9,23 +9,23 @@ class HomePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final counter = useProvider(counterProvider);
-    return AppBar(
-      title: Text('Harbour.Space App'),
-    );
-  }
-}
-
-class Layout extends HookWidget {
-  @override
-  Widget build(BuildContext context) {
-    final counter = useProvider(counterProvider);
     return MaterialApp(
-      title: 'FlowAPP',
+      title: 'Flow',
       home: Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: Text('FlowAPP'),
-            backgroundColor: Colors.orange,
+            title: Center(
+              child: Row(
+                children: [
+                  Text('Flow'),
+                  Icon(
+                    Icons.house,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+            ),
+            backgroundColor: Colors.lightBlue,
           ),
           body: LayoutBuilder(
             builder: (context, constraints) {
@@ -37,38 +37,53 @@ class Layout extends HookWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Column(
-                      children: [
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.house,
-                              color: Colors.blue,
-                            ),
-                            Icon(
-                              Icons.house,
-                              color: Colors.blue,
-                            ),
-                          ],
-                        ),
-                        Container(
-                          child: Text(
-                            'Asanas',
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.blue,
-                            ),
-                          ),
-                        ),
-                      ],
+                    Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text('Create a new Flow'),
+                      ),
                     ),
-                    SizedBox(height: 36),
-                    SizedBox(height: 36),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Standing'),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Backward Bending'),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Forward Bending'),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Spinal Twisting'),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Inverted'),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Core Strength'),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Hip opening'),
+                    SizedBox(height: 200.0),
+                    Asanastyps('Relaxation'),
+                    SizedBox(height: 200.0),
                   ],
                 ),
               ));
             },
           )),
+    );
+  }
+}
+
+class Asanastyps extends StatelessWidget {
+  final String name;
+
+  const Asanastyps(this.name);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: DecoratedBox(
+        decoration: BoxDecoration(color: Colors.orange),
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Text(name),
+        ),
+      ),
     );
   }
 }

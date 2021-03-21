@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -40,11 +42,8 @@ class MyApp extends HookWidget {
   Widget build(BuildContext context) {
     final yeet = useProvider(yeetProvider);
     return MaterialApp.router(
-      title: 'Harbour.Space',
-      theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
-        // textTheme: GoogleFonts.poppinsTextTheme(),
-      ),
+      title: 'Flow',
+      theme: ThemeData(),
       routeInformationParser: YeetInformationParser(),
       routerDelegate: YeeterDelegate(yeet: yeet),
     );
