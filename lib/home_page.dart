@@ -23,7 +23,7 @@ class HomePage extends HookWidget {
               ],
             ),
           ),
-          backgroundColor: Colors.lightBlue,
+          backgroundColor: Colors.orange,
         ),
         body: LayoutBuilder(
           builder: (context, constraints) {
@@ -40,28 +40,48 @@ class HomePage extends HookWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         'Create a new Flow',
-                        style:
-                            TextStyle(fontSize: 30.0, color: Colors.lightBlue),
+                        style: TextStyle(fontSize: 30.0, color: Colors.orange),
                       ),
                     ),
                   ),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                   Asanastyps('Standing'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 150.0,
+                        width: 150.0,
+                        color: Colors.grey,
+                      ),
+                      Container(
+                        height: 150.0,
+                        width: 150.0,
+                        color: Colors.grey,
+                      ),
+                      Container(
+                        height: 150.0,
+                        width: 150.0,
+                        color: Colors.grey,
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 50.0),
                   Asanastyps('Backward Bending'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                   Asanastyps('Forward Bending'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                   Asanastyps('Spinal Twisting'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                   Asanastyps('Inverted'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                   Asanastyps('Core Strength'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                   Asanastyps('Hip opening'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                   Asanastyps('Relaxation'),
-                  SizedBox(height: 200.0),
+                  SizedBox(height: 50.0),
                 ],
               ),
             ));
@@ -84,7 +104,7 @@ class Asanastyps extends StatelessWidget {
       child: SizedBox(
         width: double.infinity,
         child: DecoratedBox(
-          decoration: BoxDecoration(color: Colors.orange),
+          decoration: BoxDecoration(color: Colors.orange.shade200),
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Text(
@@ -93,6 +113,52 @@ class Asanastyps extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+abstract class Asanasimages extends StatelessWidget {
+  final String name;
+
+  const Asanasimages(this.name);
+
+  @override
+  Widget builder(context, ScrollController) {
+    return SingleChildScrollView(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          SizedBox(
+            height: 50.0,
+          ),
+          Container(
+            height: 150.0,
+            width: 150.0,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            height: 50.0,
+          ),
+          Container(
+            height: 150.0,
+            width: 150.0,
+            color: Colors.grey,
+          ),
+          SizedBox(
+            height: 50.0,
+          ),
+          Container(
+            height: 150.0,
+            width: 150.0,
+            color: Colors.grey,
+          ),
+          Container(
+            height: 150.0,
+            width: 150.0,
+            color: Colors.grey,
+          ),
+        ],
       ),
     );
   }

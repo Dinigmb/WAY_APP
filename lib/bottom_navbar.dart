@@ -6,7 +6,7 @@ class MyBottomnavbar extends StatelessWidget {
     return Container(
         height: 75,
         padding: EdgeInsets.only(top: 5, bottom: 30),
-        color: Colors.lightBlue,
+        color: Colors.orange,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[

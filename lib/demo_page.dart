@@ -3,6 +3,8 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:yeet/yeet.dart';
 
+import 'bottom_navbar.dart';
+
 final counterProvider = StateProvider((_) => 0);
 final doubleProvider = Provider((ref) => ref.watch(counterProvider).state * 2);
 final tripleProvider = Provider<int>((ref) {
@@ -31,6 +33,7 @@ class DemoPage extends HookWidget {
           ],
         ),
       ),
+      bottomNavigationBar: MyBottomnavbar(),
     );
   }
 }

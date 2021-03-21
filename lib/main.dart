@@ -45,7 +45,7 @@ class MyApp extends HookWidget {
       title: 'Flow',
       theme: ThemeData(),
       routeInformationParser: YeetInformationParser(),
-      routerDelegate: YeeterDelegate(yeet: yeet, initialPath: '/login'),
+      routerDelegate: YeeterDelegate(yeet: yeet, initialPath: '/'),
     );
   }
 }
