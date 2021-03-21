@@ -20,8 +20,8 @@ final yeetProvider = Provider<Yeet>((ref) {
   return Yeet(
     children: [
       Yeet(
-        path: '/',
-        builder: (_, __) => HomePage(),
+        path: '/login',
+        builder: (_, __) => LoginPage(),
         children: [
           Yeet(
             path: '/demo',
@@ -30,8 +30,8 @@ final yeetProvider = Provider<Yeet>((ref) {
         ],
       ),
       Yeet(
-        path: '/login',
-        builder: (_, __) => LoginPage(),
+        path: '/',
+        builder: (_, __) => HomePage(),
       ),
     ],
   );
@@ -45,7 +45,7 @@ class MyApp extends HookWidget {
       title: 'Flow',
       theme: ThemeData(),
       routeInformationParser: YeetInformationParser(),
-      routerDelegate: YeeterDelegate(yeet: yeet),
+      routerDelegate: YeeterDelegate(yeet: yeet, initialPath: '/login'),
     );
   }
 }

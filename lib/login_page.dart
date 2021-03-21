@@ -3,6 +3,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'auth_repository.dart';
+import 'bottom_navbar.dart';
 
 class LoginPage extends HookWidget {
   ProviderListenable? get authRepositoryProvider => null;
@@ -34,6 +35,7 @@ class LoginPage extends HookWidget {
                 child: Text('Login'),
               ),
       ),
+      bottomNavigationBar: MyBottomnavbar(),
     );
   }
 }
