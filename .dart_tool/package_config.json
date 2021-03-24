@@ -50,6 +50,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dartz",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/dartz-0.10.0-nullsafety.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0",
       "packageUri": "lib/",
@@ -285,7 +291,7 @@
     },
     {
       "name": "yeet",
-      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/yeet-0.1.0",
+      "rootUri": "file:///Users/christinalisaloidolt/Devloper/flutter/.pub-cache/hosted/pub.dartlang.org/yeet-0.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -296,7 +302,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-03-20T12:41:29.794619Z",
+  "generated": "2021-03-23T22:16:33.036624Z",
   "generator": "pub",
   "generatorVersion": "2.12.1"
 }
