@@ -3,15 +3,12 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'auth_repository.dart';
-import 'bottom_navbar.dart';
 
 class LoginPage extends HookWidget {
-  ProviderListenable? get authRepositoryProvider => null;
-
   @override
   Widget build(BuildContext context) {
     final waiting = useState(false);
-    final authRepository = useProvider(authRepositoryProvider!);
+    final authRepository = useProvider(authRepositoryProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -35,7 +32,6 @@ class LoginPage extends HookWidget {
                 child: Text('Login'),
               ),
       ),
-      bottomNavigationBar: MyBottomnavbar(),
     );
   }
 }

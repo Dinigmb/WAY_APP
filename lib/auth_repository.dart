@@ -13,5 +13,4 @@ class MockAuthRepository implements AuthRepository {
   }
 }
 
-final authRepositoryProvider =
-    Provider((_) => MockAuthRepository()); // TODO Implement this library.
+final authRepositoryProvider = Provider((_) => MockAuthRepository());
