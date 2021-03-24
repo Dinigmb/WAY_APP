@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2021/03/23-21:51:46.147 db03 Reusing MANIFEST /private/var/folders/cv/y20cqw1n24s7lfc2c10w1xsr0000gn/T/flutter_tools.uf9NCD/flutter_tools_chrome_device.xvZWjP/Default/Extension State/MANIFEST-000001
 2021/03/23-21:51:46.148 db03 Recovering log #3
 2021/03/23-21:51:46.148 db03 Reusing old log /private/var/folders/cv/y20cqw1n24s7lfc2c10w1xsr0000gn/T/flutter_tools.uf9NCD/flutter_tools_chrome_device.xvZWjP/Default/Extension State/000003.log 
+=======
+2021/03/21-21:11:57.012 8903 Reusing MANIFEST /private/var/folders/cv/y20cqw1n24s7lfc2c10w1xsr0000gn/T/flutter_tools.FrC6xM/flutter_tools_chrome_device.Rj5qWv/Default/Extension State/MANIFEST-000001
+2021/03/21-21:11:57.012 8903 Recovering log #3
+2021/03/21-21:11:57.012 8903 Reusing old log /private/var/folders/cv/y20cqw1n24s7lfc2c10w1xsr0000gn/T/flutter_tools.FrC6xM/flutter_tools_chrome_device.Rj5qWv/Default/Extension State/000003.log 
+>>>>>>> main
