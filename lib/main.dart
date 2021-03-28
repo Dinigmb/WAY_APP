@@ -1,39 +1,37 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:hive/hive.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:flow_app/auth_repository.dart';
-import 'package:flow_app/demo_page.dart';
 import 'package:yeet/yeet.dart';
 
-import 'auth_repository.dart';
+import 'application/auth/auth_bloc.dart';
 import 'home_page.dart';
-import 'login_page.dart';
+import 'presentation/auth/auth_view.dart';
 
 void main() {
+  Hive.init('/hive');
   runApp(ProviderScope(child: MyApp()));
 }
 
 final yeetProvider = Provider<Yeet>((ref) {
-  ref.watch(authRepositoryProvider);
-  return Yeet(
-    children: [
-      Yeet(
-        path: '/login',
-        builder: (_, __) => LoginPage(),
-        children: [
-          Yeet(
-            path: '/demo',
-            builder: (_, __) => DemoPage(),
-          ),
-        ],
-      ),
-      Yeet(
-        path: '/',
-        builder: (_, __) => HomePage(),
-      ),
-    ],
+  final authState = ref.watch(authBlocProvider.state);
+  return authState.maybeWhen(
+    authenticated: (user) => Yeet(
+      children: [
+        Yeet(
+          path: '/',
+          builder: (_, __) => HomePage(),
+        ),
+      ],
+    ),
+    orElse: () => Yeet(
+      children: [
+        Yeet(
+          path: '/',
+          builder: (_, __) => AuthView(),
+        ),
+      ],
+    ),
   );
 });
 
@@ -42,14 +40,13 @@ class MyApp extends HookWidget {
   Widget build(BuildContext context) {
     final yeet = useProvider(yeetProvider);
     return MaterialApp.router(
-      title: 'Flow',
-      theme: ThemeData(),
+      title: 'Harbour.Space',
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+        // textTheme: GoogleFonts.poppinsTextTheme(),
+      ),
       routeInformationParser: YeetInformationParser(),
-<<<<<<< HEAD
-      routerDelegate: YeeterDelegate(yeet: yeet, initialPath: '/'),
-=======
-      routerDelegate: YeeterDelegate(yeet: yeet, initialPath: '/login'),
->>>>>>> main
+      routerDelegate: YeeterDelegate(yeet: yeet),
     );
   }
 }
