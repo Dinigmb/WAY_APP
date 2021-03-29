@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 import 'package:flow_app/domain/auth/auth_repo.dart';
 import 'package:flow_app/domain/auth/user.dart';
+
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'auth_state.dart';

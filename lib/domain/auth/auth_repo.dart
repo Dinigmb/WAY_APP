@@ -6,7 +6,6 @@ import 'package:hooks_riverpod/all.dart';
 import 'package:flow_app/domain/auth/auth_failure.dart';
 
 import 'auth_failure.dart';
-import 'user.dart';
 
 class AuthRepo {
   final firebase_auth.FirebaseAuth firebaseAuth;

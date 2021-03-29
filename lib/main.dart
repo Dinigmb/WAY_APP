@@ -1,3 +1,4 @@
+import 'package:flow_app/common/flow_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hive/hive.dart';
@@ -42,7 +43,7 @@ class MyApp extends HookWidget {
     return MaterialApp.router(
       title: 'Harbour.Space',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: flowColor,
         // textTheme: GoogleFonts.poppinsTextTheme(),
       ),
       routeInformationParser: YeetInformationParser(),
