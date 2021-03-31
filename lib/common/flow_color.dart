@@ -29,4 +29,4 @@ const MaterialColor flowColor = MaterialColor(
     900: Color(0xFF903868),
   },
 );
-const int _flowPrimaryValue = 0xFFEA9049;
+const int _flowPrimaryValue = 0xFFD35E5A;

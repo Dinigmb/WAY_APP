@@ -53,42 +53,47 @@ class DemoPage extends HookWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(14.0),
                         child: Text(
-                          'Hello xoxo Flow',
+                          'Your Flow',
                           style: GoogleFonts.montserrat(
                               fontSize: 40.0, color: Colors.white),
                         ),
                       ),
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        IconButton(
+                          icon: Icon(
+                            Icons.bookmark_border_rounded,
+                          ),
+                          color: Colors.white,
+                          iconSize: 50.0,
+                          onPressed: () {},
+                        ),
+                      ],
+                    ),
                     SizedBox(height: 40.0),
-                    Asanastyps('Standing'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Backward Bending'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Forward Bending'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Spinal Twisting'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Inverted'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Core Strength'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Hip opening'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Relaxation'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 90.0),
@@ -163,62 +168,22 @@ class Asanasimages extends StatelessWidget {
   @override
   Widget build(context) {
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
+      child: Center(
+        child: Column(
+          children: [
+            Container(
+              height: 150.0,
+              width: 410.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white.withOpacity(0.5),
+              ),
             ),
-          ),
-          SizedBox(
-            width: 50.0,
-          ),
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
+            SizedBox(
+              width: 50.0,
             ),
-          ),
-          SizedBox(
-            width: 50.0,
-          ),
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
-          ),
-          SizedBox(
-            width: 50.0,
-          ),
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
-          ),
-          SizedBox(
-            width: 50.0,
-          ),
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -22,7 +22,12 @@ class LoginBloc extends StateNotifier<LoginState> {
   }
 
   void passwordChanged(String password) {
-    state = state.copyWith(password: password);
+    final isValid = password.length > 6;
+    state = state.copyWith(
+        password: password,
+        passwordError: isValid
+            ? null
+            : 'The lenght of the password should be at least 7 characters!');
   }
 
   void loginPressed() {

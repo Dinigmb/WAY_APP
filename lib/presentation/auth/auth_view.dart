@@ -33,7 +33,7 @@ class AuthView extends HookWidget {
             Text(
               'RISE & SHINE',
               style: GoogleFonts.kellySlab(
-                  fontSize: 40.0, color: Colors.pink.shade600),
+                  fontSize: 40.0, color: Colors.pink.shade400),
             ),
             SizedBox(height: 30.0),
             authState.when(
@@ -69,6 +69,7 @@ class AuthView extends HookWidget {
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           hintText: 'Password',
+                          errorText: loginState.passwordError,
                         ),
                       ),
                       SizedBox(height: 30),

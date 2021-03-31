@@ -9,7 +9,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'demo_page.dart';
 import 'flow_scaffold.dart';
-import 'auth_repository.dart';
 
 const myBlue = Color(0xFF3D7EAA);
 const myYellow = Color(0xFFFFE47A);
@@ -34,28 +33,48 @@ class HomePage extends HookWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: 50,
+                      height: 60,
                     ),
                     Center(
                       child: Padding(
                         padding: const EdgeInsets.all(14.0),
-                        child: Text(
-                          'Create a new Flow',
-                          style: GoogleFonts.montserrat(
-                              fontSize: 40.0, color: Colors.white),
-                        ),
+                        child: Text('Create a new Flow',
+                            style: GoogleFonts.roboto(
+                                fontSize: 40.0, color: Colors.white)),
                       ),
                     ),
-                    SizedBox(height: 40.0),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        IconButton(
+                          icon: Icon(
+                            Icons.add_rounded,
+                          ),
+                          color: Colors.white,
+                          iconSize: 50.0,
+                          onPressed: () {},
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 20.0),
+                    Image.asset('assets/Meditative Lotus.png'),
                     Asanastyps('Standing'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Backward Bending'),
+                    Asanastyps('Backward Bends'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Forward Bending'),
+                    Asanastyps('Forward Bends'),
+                    SizedBox(height: 5.0),
+                    Asanasimages(),
+                    SizedBox(height: 40.0),
+                    Asanastyps('Side Bends'),
+                    SizedBox(height: 5.0),
+                    Asanasimages(),
+                    SizedBox(height: 40.0),
+                    Asanastyps('Inversions'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
@@ -63,19 +82,11 @@ class HomePage extends HookWidget {
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 40.0),
-                    Asanastyps('Inverted'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Core Strength'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Hip opening'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
                     Asanastyps('Relaxation'),
+                    SizedBox(height: 5.0),
+                    Asanasimages(),
+                    SizedBox(height: 40.0),
+                    Asanastyps('Meditation'),
                     SizedBox(height: 5.0),
                     Asanasimages(),
                     SizedBox(height: 90.0),
@@ -136,8 +147,7 @@ class Asanastyps extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Text(
               name,
-              style:
-                  GoogleFonts.montserrat(fontSize: 25.0, color: Colors.white),
+              style: GoogleFonts.roboto(fontSize: 25.0, color: Colors.white),
             ),
           ),
         ),
@@ -176,6 +186,8 @@ class Asanasimages extends StatelessWidget {
             width: 50.0,
           ),
           Container(
+            child: Image.asset(
+                'assets/Backward Bends/Backward Bends High Lunge.png'),
             height: 150.0,
             width: 150.0,
             decoration: BoxDecoration(

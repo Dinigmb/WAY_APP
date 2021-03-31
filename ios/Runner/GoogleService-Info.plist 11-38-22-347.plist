@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>748736139083-tm5av21c111aaid4li0ahos0b2r88ac0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.748736139083-tm5av21c111aaid4li0ahos0b2r88ac0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCc2IitGtfTEfNEYkAgJCwbf5T876jGwTM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>748736139083</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>DiniLoidolt-Flow-App</string>
+	<key>PROJECT_ID</key>
+	<string>flow-ed12c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flow-ed12c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:748736139083:ios:5e27e3c54487d643e922ce</string>
+</dict>
+</plist>

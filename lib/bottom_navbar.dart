@@ -27,7 +27,7 @@ class MyBottomnavbar extends StatelessWidget {
                 children: <Widget>[
                   IconButton(
                     icon: Icon(
-                      Icons.house,
+                      Icons.auto_awesome,
                       size: 44.0,
                       color: Colors.white,
                     ),
@@ -47,7 +47,7 @@ class MyBottomnavbar extends StatelessWidget {
                   ),
                   IconButton(
                     icon: Icon(
-                      Icons.person,
+                      Icons.favorite,
                       size: 44.0,
                       color: Colors.white,
                     ),
