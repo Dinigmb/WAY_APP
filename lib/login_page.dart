@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:lottie/lottie.dart';
 
 import 'flow_scaffold.dart';
 
@@ -26,7 +27,8 @@ class LoginPage extends HookWidget {
     return MaterialApp(
       title: 'Flow',
       home: FlowScaffold(
-        child: FlowBackground(
+        child: Container(
+          color: Colors.black,
           child: LayoutBuilder(
             builder: (context, constraints) {
               return SingleChildScrollView(
@@ -44,37 +46,23 @@ class LoginPage extends HookWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(14.0),
                         child: Text(
-                          'Your Favorite Flow',
+                          'Welcome to the Flow State',
                           style: GoogleFonts.montserrat(
-                              fontSize: 40.0, color: Colors.white),
+                              fontSize: 40.0, color: Colors.brown[50]),
                         ),
                       ),
                     ),
+                    Lottie.asset('assets/yogi_hosi.json'),
                     SizedBox(height: 40.0),
                     SizedBox(height: 5.0),
-                    Asanasimages(),
+                    Text(
+                      'New features comming soon',
+                      style: GoogleFonts.montserrat(
+                          fontSize: 40.0, color: Colors.brown[50]),
+                    ),
                     SizedBox(height: 40.0),
                     SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 90.0),
+                    SizedBox(height: 135.0),
                   ],
                 ),
               ));

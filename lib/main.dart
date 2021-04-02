@@ -16,7 +16,6 @@ final firebaseProvider =
     FutureProvider((_) async => await Firebase.initializeApp());
 
 void main() async {
-  await Firebase.initializeApp();
   Hive.init('/hive');
   runApp(ProviderScope(child: MyApp()));
 }

@@ -6,6 +6,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:yeet/yeet.dart';
+import 'package:lottie/lottie.dart';
 
 class AuthView extends HookWidget {
   @override
@@ -26,14 +27,19 @@ class AuthView extends HookWidget {
             SizedBox(
               height: 20.0,
             ),
-            Image.asset('assets/Flow_logo.png'),
+            Lottie.asset('assets/yoga_floating.json'),
             SizedBox(
-              height: 30.0,
+              height: 10.0,
+            ),
+            Text(
+              'FLOW',
+              style: GoogleFonts.kellySlab(
+                  fontSize: 40.0, color: Colors.pink.shade700),
             ),
             Text(
               'RISE & SHINE',
               style: GoogleFonts.kellySlab(
-                  fontSize: 40.0, color: Colors.pink.shade400),
+                  fontSize: 40.0, color: Colors.pink.shade700),
             ),
             SizedBox(height: 30.0),
             authState.when(

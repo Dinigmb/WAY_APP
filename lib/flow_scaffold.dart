@@ -40,7 +40,10 @@ class FlowBackground extends HookWidget {
           colors: [myYellow, color!],
         ),
       ),
-      child: child,
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: child,
+      ),
     );
   }
 }

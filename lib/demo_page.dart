@@ -1,3 +1,5 @@
+import 'package:flow_app/application/flow/flow_bloc.dart';
+import 'package:flow_app/common/flow_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -15,6 +17,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'demo_page.dart';
 import 'flow_scaffold.dart';
+import 'home_page.dart';
 
 const myBlue = Color(0xFF3D7EAA);
 const myYellow = Color(0xFFFFE47A);
@@ -31,7 +34,7 @@ final tripleProvider = Provider<int>((ref) {
 class DemoPage extends HookWidget {
   @override
   Widget build(BuildContext context) {
-    final counter = useProvider(counterProvider);
+    final flowState = useProvider(flowBlocProvider.state);
     return MaterialApp(
       title: 'Flow',
       home: FlowScaffold(
@@ -54,8 +57,8 @@ class DemoPage extends HookWidget {
                         padding: const EdgeInsets.all(14.0),
                         child: Text(
                           'Your Flow',
-                          style: GoogleFonts.montserrat(
-                              fontSize: 40.0, color: Colors.white),
+                          style: GoogleFonts.roboto(
+                              fontSize: 40.0, color: Colors.brown[50]),
                         ),
                       ),
                     ),
@@ -66,37 +69,35 @@ class DemoPage extends HookWidget {
                           icon: Icon(
                             Icons.bookmark_border_rounded,
                           ),
-                          color: Colors.white,
+                          color: Colors.brown[50],
                           iconSize: 50.0,
                           onPressed: () {},
                         ),
                       ],
                     ),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 90.0),
+                    ...flowState.selectedAsanas
+                        .map((e) => Card(
+                              color: Colors.brown[50],
+                              child: Row(
+                                children: [
+                                  AsanaWidget(e),
+                                  Center(
+                                    child: Text(
+                                      e.name,
+                                      style: GoogleFonts.roboto(
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.pink[900],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ))
+                        .toList(),
+                    SizedBox(
+                      height: 80.0,
+                    )
                   ],
                 ),
               ));

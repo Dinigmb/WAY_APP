@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/dyld.modulemap \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngineGroup.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/christinalisaloidolt/AndroidStudioProjects/flutter_app_way/WAY_APP/build/ios/Debug-iphonesimulator/Flutter.framework/Headers/Flutter.h

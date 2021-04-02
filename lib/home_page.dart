@@ -1,9 +1,12 @@
 import 'dart:ui';
 
+import 'package:flow_app/application/flow/flow_bloc.dart';
 import 'package:flow_app/bottom_navbar.dart';
+import 'package:flow_app/domain/asana/asana.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:lottie/lottie.dart';
 import 'package:yeet/yeet.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -40,56 +43,14 @@ class HomePage extends HookWidget {
                         padding: const EdgeInsets.all(14.0),
                         child: Text('Create a new Flow',
                             style: GoogleFonts.roboto(
-                                fontSize: 40.0, color: Colors.white)),
+                                fontSize: 40.0, color: Colors.brown[50])),
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: <Widget>[
-                        IconButton(
-                          icon: Icon(
-                            Icons.add_rounded,
-                          ),
-                          color: Colors.white,
-                          iconSize: 50.0,
-                          onPressed: () {},
-                        ),
-                      ],
-                    ),
                     SizedBox(height: 20.0),
-                    Image.asset('assets/Meditative Lotus.png'),
-                    Asanastyps('Standing'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Backward Bends'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Forward Bends'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Side Bends'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Inversions'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Spinal Twisting'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Relaxation'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 40.0),
-                    Asanastyps('Meditation'),
-                    SizedBox(height: 5.0),
-                    Asanasimages(),
-                    SizedBox(height: 90.0),
+                    ...allAsanas(),
+                    SizedBox(
+                      height: 80.0,
+                    )
                   ],
                 ),
               ));
@@ -99,6 +60,21 @@ class HomePage extends HookWidget {
       ),
     );
   }
+}
+
+List<Widget> allAsanas() {
+  Set<String> categories = {};
+  for (final asana in asanas) {
+    categories.add(asana.category);
+  }
+  return categories
+      .map(
+        (e) => Asanasimages(
+          category: e.replaceAll("_", " "),
+          asanasList: asanas.where((asana) => asana.category == e).toList(),
+        ),
+      )
+      .toList();
 }
 
 class GlassBar extends AppBar {
@@ -147,7 +123,8 @@ class Asanastyps extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Text(
               name,
-              style: GoogleFonts.roboto(fontSize: 25.0, color: Colors.white),
+              style:
+                  GoogleFonts.roboto(fontSize: 25.0, color: Colors.brown[50]),
             ),
           ),
         ),
@@ -157,67 +134,53 @@ class Asanastyps extends StatelessWidget {
 }
 
 class Asanasimages extends StatelessWidget {
+  final String category;
+  final List<Asana> asanasList;
+
+  const Asanasimages({
+    required this.category,
+    required this.asanasList,
+  });
+
   @override
   Widget build(context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
+    return Column(
+      children: [
+        Asanastyps(category),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: asanasList.map((e) => AsanaWidget(e)).toList(),
           ),
-          SizedBox(
-            width: 50.0,
+        ),
+      ],
+    );
+  }
+}
+
+class AsanaWidget extends HookWidget {
+  final Asana asana;
+
+  AsanaWidget(this.asana);
+
+  @override
+  Widget build(BuildContext context) {
+    final flowBloc = useProvider(flowBlocProvider);
+    useProvider(flowBlocProvider.state);
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: GestureDetector(
+        onTap: () => flowBloc.toggleAsana(asana),
+        child: Container(
+          height: 150.0,
+          width: 150.0,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.white
+                .withOpacity(flowBloc.isSelected(asana) ? 1.0 : 0.5),
           ),
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
-          ),
-          SizedBox(
-            width: 50.0,
-          ),
-          Container(
-            child: Image.asset(
-                'assets/Backward Bends/Backward Bends High Lunge.png'),
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
-          ),
-          SizedBox(
-            width: 50.0,
-          ),
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
-          ),
-          SizedBox(
-            width: 50.0,
-          ),
-          Container(
-            height: 150.0,
-            width: 150.0,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withOpacity(0.5),
-            ),
-          ),
-        ],
+          child: Image.asset(asana.imagePath),
+        ),
       ),
     );
   }
